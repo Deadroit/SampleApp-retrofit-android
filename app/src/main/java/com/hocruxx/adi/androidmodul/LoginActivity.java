@@ -16,6 +16,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.hocruxx.adi.androidmodul.ui.home.HomeActivity;
+
 import java.security.PrivateKey;
 
 public class LoginActivity extends AppCompatActivity {
@@ -90,7 +92,7 @@ public class LoginActivity extends AppCompatActivity {
             Log.e("actLogin","true");
             if(loginData()){
                 initSharedPreference();
-                Intent main = new Intent(this, MainActivity.class);
+                Intent main = new Intent(this, HomeActivity.class);
                 startActivity(main);
                 finish();
             } else {

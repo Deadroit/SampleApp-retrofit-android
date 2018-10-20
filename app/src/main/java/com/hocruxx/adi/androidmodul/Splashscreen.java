@@ -8,7 +8,7 @@ import android.os.Handler;
 import android.view.Window;
 import android.view.WindowManager;
 
-
+import com.hocruxx.adi.androidmodul.ui.home.HomeActivity;
 
 
 public class Splashscreen extends AppCompatActivity {
@@ -31,7 +31,7 @@ public class Splashscreen extends AppCompatActivity {
     private void handler(){
         new Handler().postDelayed(() -> {
             if (initPreference()){
-                Intent main = new Intent(Splashscreen.this, MainActivity.class);
+                Intent main = new Intent(Splashscreen.this, HomeActivity.class);
                 startActivity(main);
                 finish();
             } else {
